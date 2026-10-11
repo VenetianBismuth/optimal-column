@@ -15,6 +15,7 @@ for idx in range(len(nu)):
     xi[idx] = (1/pi) * (nu[idx] - 0.5 * math.sin(2 * nu[idx]))
     A[idx]  = (4/3) * (V/L) * (math.sin(nu[idx]))**2
 
+
 fig, ax = plt.subplots()
 #ax.plot(nu, xi, 'b')
 ax.plot(xi, A, 'b')
