@@ -38,6 +38,7 @@ def bisection(y, xl, xu, n, es):
     ea = 100
 
     soln = [(iter, xl, xu, xr, ea)]
+
     while iter < n and ea > es:
         xr_old = xr
         xr = (xl + xu) / 2.0
@@ -92,5 +93,5 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-In this trial, we have the system [x, y]' = [1, 2xy + 5y]
+# In this trial, we have the system [x, y]' = [1, 2xy + 5y]
 """
